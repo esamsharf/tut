@@ -7,138 +7,188 @@ import 'MyColorManager.dart';
 
 ThemeData getApplicationTheme() {
   return ThemeData(
-    /// main colors of the app
 
-    primaryColor: MyColorManager.KprimaryColor,
-    primaryColorLight: MyColorManager.KdarkGrey,
-    primaryColorDark: MyColorManager.KGrey,
-    disabledColor: MyColorManager.kdisabledColor,
-    accentColor: MyColorManager.KGrey,
-    splashColor: MyColorManager.KligtGrey,
+      /// main colors of the app
 
-    /// card view theme
-    cardTheme: CardTheme(
-      color: MyColorManager.KWhite,
-      elevation: 0,
-      shadowColor: MyColorManager.KligtGrey,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(10),
-      ),
-    ),
+      primaryColor: MyColorManager.KprimaryColor,
+      primaryColorLight: MyColorManager.KdarkGrey,
+      primaryColorDark: MyColorManager.KGrey,
+      disabledColor: MyColorManager.kdisabledColor,
+      accentColor: MyColorManager.KGrey,
+      splashColor: MyColorManager.KligtGrey,
 
-    /// app bar theme
-    appBarTheme: AppBarTheme(
-      color: MyColorManager.KWhite,
-      elevation: AppSize.small,
-      shadowColor: MyColorManager.KligtGrey,
-      titleTextStyle: TextStyle(
+      /// card view theme
+      cardTheme: CardTheme(
         color: MyColorManager.KWhite,
-        fontSize: 18,
-        fontWeight: FontWeight.w600,
+        elevation: AppSize.small,
+        shadowColor: MyColorManager.KligtGrey,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(10),
+        ),
       ),
-      iconTheme: IconThemeData(
-        color: MyColorManager.KGrey,
-      ),
-      textTheme: TextTheme(
-        headline6: TextStyle(
-          color: MyColorManager.KGrey,
-          fontSize: 18,
+
+      /// app bar theme
+      appBarTheme: AppBarTheme(
+        color: MyColorManager.KWhite,
+        elevation: AppSize.small,
+        shadowColor: MyColorManager.KligtGrey,
+        titleTextStyle: TextStyle(
+          color: MyColorManager.KWhite,
+          fontSize: AppSize.large,
           fontWeight: FontWeight.w600,
         ),
-      ),
-    ),
-
-    /// button theme
-
-    buttonTheme: ButtonThemeData(
-      buttonColor: MyColorManager.KprimaryColor,
-      disabledColor: MyColorManager.kdisabledColor,
-      textTheme: ButtonTextTheme.primary,
-      shape: StadiumBorder(
-        side: BorderSide(
-          color: MyColorManager.KprimaryColor,
-          width: 1,
+        iconTheme: IconThemeData(
+          color: MyColorManager.KGrey,
         ),
-      ),
-      splashColor: MyColorManager.KligtGrey,
-    ),
-
-    /// elevated button theme
-    elevatedButtonTheme: ElevatedButtonThemeData(
-      style: ButtonStyle(
-        backgroundColor: MaterialStateProperty.all(MyColorManager.KprimaryColor),
-        foregroundColor: MaterialStateProperty.all(MyColorManager.KWhite),
-        overlayColor: MaterialStateProperty.all(MyColorManager.KligtGrey),
-        shape: MaterialStateProperty.all(
-          RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(AppSize.small),
+        textTheme: TextTheme(
+          headline6: TextStyle(
+            color: MyColorManager.KGrey,
+            fontSize: AppSize.large,
+            fontWeight: FontWeight.w600,
           ),
         ),
       ),
-    ),
 
-    /// text theme
-    textTheme: TextTheme(
-      headline1: getSemiBoldStayle(
-        color: MyColorManager.KGrey,
-        fontSize: FontSize.xxl,
-      ),
-      headline2: getSemiBoldStayle(
-        color: MyColorManager.KGrey,
-        fontSize: FontSize.xl,
-      ),
-      headline3: getSemiBoldStayle(
-        color: MyColorManager.KGrey,
-        fontSize: FontSize.l,
-      ),
-      headline4: getSemiBoldStayle(
-        color: MyColorManager.KGrey,
-        fontSize: FontSize.m,
-      ),
-      headline5: getSemiBoldStayle(
-        color: MyColorManager.KGrey,
-        fontSize: FontSize.s,
-      ),
-      headline6: getSemiBoldStayle(
-        color: MyColorManager.KGrey,
-        fontSize: FontSize.xs,
-      ),
-      bodyText1: getRegularStayle(
-        color: MyColorManager.KligtGrey,
-        fontSize: FontSize.m,
-      ),
-      bodyText2: getRegularStayle(
-        color: MyColorManager.KligtGrey,
-        fontSize: FontSize.s,
-      ),
-      subtitle1: getRegularStayle(
-        color: MyColorManager.KligtGrey,
-        fontSize: FontSize.m,
-      ),
-      subtitle2: getRegularStayle(
-        color: MyColorManager.KligtGrey,
-        fontSize: FontSize.s,
-      ),
-      caption: getRegularStayle(
-        color: MyColorManager.KligtGrey,
-        fontSize: FontSize.xs,
-      ),
-      button: getRegularStayle(
-        color: MyColorManager.KligtGrey,
-        fontSize: FontSize.m,
-      ),
-      overline: getRegularStayle(
-        color: MyColorManager.KligtGrey,
-        fontSize: FontSize.xs,
-      ),
-    ),
+      /// button theme
 
-    // input theme
+      buttonTheme: ButtonThemeData(
+        buttonColor: MyColorManager.KprimaryColor,
+        disabledColor: MyColorManager.kdisabledColor,
+        textTheme: ButtonTextTheme.primary,
+        shape: StadiumBorder(
+          side: BorderSide(
+            color: MyColorManager.KprimaryColor,
+            width: AppSize.small,
+          ),
+        ),
+        splashColor: MyColorManager.KligtGrey,
+      ),
 
-    // icon theme
+      /// elevated button theme
+      elevatedButtonTheme: ElevatedButtonThemeData(
+        style: ButtonStyle(
+          backgroundColor: MaterialStateProperty.all(MyColorManager.KprimaryColor),
+          foregroundColor: MaterialStateProperty.all(MyColorManager.KWhite),
+          overlayColor: MaterialStateProperty.all(MyColorManager.KligtGrey),
+          shape: MaterialStateProperty.all(
+            RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(AppSize.small),
+            ),
+          ),
+        ),
+      ),
 
-    // bottom navigation bar theme
+      /// text theme
+      textTheme: TextTheme(
+        headline1: getSemiBoldStayle(
+          color: MyColorManager.KGrey,
+          fontSize: FontSize.xxl,
+        ),
+        headline2: getSemiBoldStayle(
+          color: MyColorManager.KGrey,
+          fontSize: FontSize.xl,
+        ),
+        headline3: getSemiBoldStayle(
+          color: MyColorManager.KGrey,
+          fontSize: FontSize.l,
+        ),
+        headline4: getSemiBoldStayle(
+          color: MyColorManager.KGrey,
+          fontSize: FontSize.m,
+        ),
+        headline5: getSemiBoldStayle(
+          color: MyColorManager.KGrey,
+          fontSize: FontSize.s,
+        ),
+        headline6: getSemiBoldStayle(
+          color: MyColorManager.KGrey,
+          fontSize: FontSize.xs,
+        ),
+        bodyText1: getRegularStayle(
+          color: MyColorManager.KligtGrey,
+          fontSize: FontSize.m,
+        ),
+        bodyText2: getRegularStayle(
+          color: MyColorManager.KligtGrey,
+          fontSize: FontSize.s,
+        ),
+        subtitle1: getRegularStayle(
+          color: MyColorManager.KligtGrey,
+          fontSize: FontSize.m,
+        ),
+        subtitle2: getRegularStayle(
+          color: MyColorManager.KligtGrey,
+          fontSize: FontSize.s,
+        ),
+        caption: getRegularStayle(
+          color: MyColorManager.KligtGrey,
+          fontSize: FontSize.xs,
+        ),
+        button: getRegularStayle(
+          color: MyColorManager.KligtGrey,
+          fontSize: FontSize.m,
+        ),
+        overline: getRegularStayle(
+          color: MyColorManager.KligtGrey,
+          fontSize: FontSize.xs,
+        ),
+      ),
 
-    // bottom sheet theme
-  );
+      /// input theme
+      inputDecorationTheme: InputDecorationTheme(
+        contentPadding: EdgeInsets.all(AppPaddings.small),
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(AppSize.small),
+          borderSide: BorderSide(
+            color: MyColorManager.KligtGrey,
+            width: AppSize.small,
+          ),
+        ),
+        hintStyle: getRegularStayle(
+          color: MyColorManager.KligtGrey,
+          fontSize: FontSize.m,
+        ),
+        labelStyle: getRegularStayle(
+          color: MyColorManager.KligtGrey,
+          fontSize: FontSize.m,
+        ),
+        errorStyle: getRegularStayle(
+          color: MyColorManager.KligtGrey,
+          fontSize: FontSize.m,
+        ),
+        enabledBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(AppSize.small),
+          borderSide: BorderSide(
+            color: MyColorManager.KligtGrey,
+            width: AppSize.small,
+          ),
+        ),
+        focusedBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(AppSize.small),
+          borderSide: BorderSide(
+            color: MyColorManager.KprimaryColor,
+            width: AppSize.small,
+          ),
+        ),
+        errorBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(AppSize.small),
+          borderSide: BorderSide(
+            color: MyColorManager.KerrorColor,
+            width: AppSize.small,
+          ),
+        ),
+        focusedErrorBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(AppSize.small),
+          borderSide: BorderSide(
+            color: MyColorManager.KfocusErrorColor,
+            width: AppSize.small,
+          ),
+        ),
+      )
+      // icon theme
+
+      // bottom navigation bar theme
+
+      // bottom sheet theme
+      );
 }

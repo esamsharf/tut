@@ -19,6 +19,7 @@ class MyColorManager {
   static Color KerrorColor = ColorExtension.fromHex("#FF3B30");
   static Color KsuccessColor = ColorExtension.fromHex("#27AE60");
   static Color kdisabledColor = ColorExtension.fromHex("#9E9E9E");
+  static Color KfocusErrorColor = ColorExtension.fromHex("#FF3B30");
 }
 
 extension ColorExtension on Color {

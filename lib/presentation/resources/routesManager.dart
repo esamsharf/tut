@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tut/presentation/resources/stringsManager.dart';
 import 'package:tut/presentation/splash/splash.dart';
 
 import '../forgotPassword/forgotPassword.dart';
@@ -72,10 +73,10 @@ class RouteGenerator {
     return MaterialPageRoute(
       builder: (_) => Scaffold(
         appBar: AppBar(
-          title: Text('Route not found'),
+          title: const Text(AppStrings.noRouteFound),
         ),
-        body: Center(
-          child: Text('Route not found'),
+        body: const Center(
+          child: Text(AppStrings.noRouteFound),
         ),
       ),
     );

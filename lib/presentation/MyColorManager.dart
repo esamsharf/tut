@@ -9,6 +9,16 @@ class MyColorManager {
   static Color KligtGrey = ColorExtension.fromHex("#9E9E9E");
   static Color KWhite = ColorExtension.fromHex("#FFFFFF");
   static Color KBlack = ColorExtension.fromHex("#000000");
+
+  // new colors
+  static Color KLightBlue = ColorExtension.fromHex("#E5F0FF");
+  static Color KBlue = ColorExtension.fromHex("#2D9CDB");
+  static Color KDarkBlue = ColorExtension.fromHex("#1E3A8A");
+  static Color KLightGreen = ColorExtension.fromHex("#E5F0FF");
+  static Color KGreen = ColorExtension.fromHex("#27AE60");
+  static Color KerrorColor = ColorExtension.fromHex("#FF3B30");
+  static Color KsuccessColor = ColorExtension.fromHex("#27AE60");
+  static Color kdisabledColor = ColorExtension.fromHex("#9E9E9E");
 }
 
 extension ColorExtension on Color {

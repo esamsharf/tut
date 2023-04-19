@@ -1,14 +1,13 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:tut/presentation/themeManager.dart';
 
 class MyApp extends StatefulWidget {
-  MyApp._internal();
-  static final MyApp instance = MyApp._internal();
+  const MyApp._internal();
+  static const MyApp instance = MyApp._internal();
   factory MyApp() => instance;
   @override
   _MyAppState createState() => _MyAppState();
 
-  @override
   Widget build(BuildContext context) {
     return Container();
   }
@@ -17,6 +16,9 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: getApplicationTheme(),
+    );
   }
 }

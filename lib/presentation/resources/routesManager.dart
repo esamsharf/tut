@@ -1,3 +1,13 @@
+import 'package:flutter/material.dart';
+import 'package:tut/presentation/splash/splash.dart';
+
+import '../forgotPassword/forgotPassword.dart';
+import '../login/login.dart';
+import '../main/main.dart';
+import '../onboarding/onboarding.dart';
+import '../register/register.dart';
+import '../storeDetais/storeDetais.dart';
+
 class Routes {
   static const String splashRoute = '/';
   static const String loginRoute = '/login';
@@ -20,4 +30,54 @@ class Routes {
   static const String changeLanguageRoute = '/changeLanguage';
   static const String mainRoute = '/main';
   static const String storeDetailsRoute = '/storeDetails';
+}
+
+class RouteGenerator {
+  static Route<dynamic> getRoute(RouteSettings routeSettings) {
+    switch (routeSettings.name) {
+      case Routes.splashRoute:
+        return MaterialPageRoute(
+          builder: (_) => SplashView(),
+        );
+      case Routes.loginRoute:
+        return MaterialPageRoute(
+          builder: (_) => LoginView(),
+        );
+      case Routes.onBoardingRoute:
+        return MaterialPageRoute(
+          builder: (_) => OnBoardingView(),
+        );
+      case Routes.registerRoute:
+        return MaterialPageRoute(
+          builder: (_) => RegisterView(),
+        );
+      case Routes.mainRoute:
+        return MaterialPageRoute(
+          builder: (_) => MainView(),
+        );
+      case Routes.storeDetailsRoute:
+        return MaterialPageRoute(
+          builder: (_) => StoreDetailsView(),
+        );
+      case Routes.forgotPasswordRoute:
+        return MaterialPageRoute(
+          builder: (_) => ForgotPasswordView(),
+        );
+      default:
+        return UnDefinedRouteView();
+    }
+  }
+
+  static Route<dynamic> UnDefinedRouteView() {
+    return MaterialPageRoute(
+      builder: (_) => Scaffold(
+        appBar: AppBar(
+          title: Text('Route not found'),
+        ),
+        body: Center(
+          child: Text('Route not found'),
+        ),
+      ),
+    );
+  }
 }

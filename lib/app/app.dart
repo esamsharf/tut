@@ -3,7 +3,7 @@ import 'package:tut/presentation/resources/themeManager.dart';
 
 class MyApp extends StatefulWidget {
   const MyApp._internal();
-  static const MyApp instance = MyApp._internal();
+  static MyApp instance = const MyApp._internal();
   factory MyApp() => instance;
   @override
   _MyAppState createState() => _MyAppState();
